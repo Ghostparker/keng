@@ -1,0 +1,41 @@
+1.遇到问题
+保存的模型参数和实际的模型参数名称不同
+Out[14]: odict_keys(['conv.weight', 'bn.weight', 'bn.bias', 'bn.running_mean', 'bn.running_var', 'bn.num_batches_tracked', 'layer1.0.conv1.weight', 'layer1.0.bn1.weight', 'layer1.0.bn1.bia$
+', 'layer1.0.bn1.running_mean', 'layer1.0.bn1.running_var', 'layer1.0.bn1.num_batches_tracked', 'layer1.0.conv2.weight', 'layer1.0.bn2.weight', 'layer1.0.bn2.bias', 'layer1.0.bn2.running_m$
+an', 'layer1.0.bn2.running_var', 'layer1.0.bn2.num_batches_tracked', 'layer1.1.conv1.weight', 'layer1.1.bn1.weight', 'layer1.1.bn1.bias', 'layer1.1.bn1.running_mean', 'layer1.1.bn1.running$
+var', 'layer1.1.bn1.num_batches_tracked', 'layer1.1.conv2.weight', 'layer1.1.bn2.weight', 'layer1.1.bn2.bias', 'layer1.1.bn2.running_mean', 'layer1.1.bn2.running_var', 'layer1.1.bn2.num_ba$
+ches_tracked', 'layer2.0.conv1.weight', 'layer2.0.bn1.weight', 'layer2.0.bn1.bias', 'layer2.0.bn1.running_mean', 'layer2.0.bn1.running_var', 'layer2.0.bn1.num_batches_tracked', 'layer2.0.c$
+nv2.weight', 'layer2.0.bn2.weight', 'layer2.0.bn2.bias', 'layer2.0.bn2.running_mean', 'layer2.0.bn2.running_var', 'layer2.0.bn2.num_batches_tracked', 'layer2.0.downsample.0.weight', 'layer$
+.0.downsample.1.weight', 'layer2.0.downsample.1.bias', 'layer2.0.downsample.1.running_mean', 'layer2.0.downsample.1.running_var', 'layer2.0.downsample.1.num_batches_tracked', 'layer2.1.con$
+1.weight', 'layer2.1.bn1.weight', 'layer2.1.bn1.bias', 'layer2.1.bn1.running_mean', 'layer2.1.bn1.running_var', 'layer2.1.bn1.num_batches_tracked', 'layer2.1.conv2.weight', 'layer2.1.bn2.w$
+ight', 'layer2.1.bn2.bias', 'layer2.1.bn2.running_mean', 'layer2.1.bn2.running_var', 'layer2.1.bn2.num_batches_tracked', 'layer3.0.conv1.weight', 'layer3.0.bn1.weight', 'layer3.0.bn1.bias'$
+ 'layer3.0.bn1.running_mean', 'layer3.0.bn1.running_var', 'layer3.0.bn1.num_batches_tracked', 'layer3.0.conv2.weight', 'layer3.0.bn2.weight', 'layer3.0.bn2.bias', 'layer3.0.bn2.running_mea$
+', 'layer3.0.bn2.running_var', 'layer3.0.bn2.num_batches_tracked', 'layer3.0.downsample.0.weight', 'layer3.0.downsample.1.weight', 'layer3.0.downsample.1.bias', 'layer3.0.downsample.1.runn$
+ng_mean', 'layer3.0.downsample.1.running_var', 'layer3.0.downsample.1.num_batches_tracked', 'layer3.1.conv1.weight', 'layer3.1.bn1.weight', 'layer3.1.bn1.bias', 'layer3.1.bn1.running_mean'$
+ 'layer3.1.bn1.running_var', 'layer3.1.bn1.num_batches_tracked', 'layer3.1.conv2.weight', 'layer3.1.bn2.weight', 'layer3.1.bn2.bias', 'layer3.1.bn2.running_mean', 'layer3.1.bn2.running_var$
+, 'layer3.1.bn2.num_batches_tracked', 'bn15.weight', 'bn15.bias', 'bn15.running_mean', 'bn15.running_var', 'bn15.num_batches_tracked', 'fc.weight', 'fc.bias'])
+
+In [15]: pth.keys()                                                                                                                                                                          
+Out[15]: odict_keys(['module.conv.weight', 'module.bn.weight', 'module.bn.bias', 'module.bn.running_mean', 'module.bn.running_var', 'module.bn.num_batches_tracked', 'module.layer1.0.conv1.$
+eight', 'module.layer1.0.bn1.weight', 'module.layer1.0.bn1.bias', 'module.layer1.0.bn1.running_mean', 'module.layer1.0.bn1.running_var', 'module.layer1.0.bn1.num_batches_tracked', 'module.$
+ayer1.0.conv2.weight', 'module.layer1.0.bn2.weight', 'module.layer1.0.bn2.bias', 'module.layer1.0.bn2.running_mean', 'module.layer1.0.bn2.running_var', 'module.layer1.0.bn2.num_batches_tra$
+ked', 'module.layer1.1.conv1.weight', 'module.layer1.1.bn1.weight', 'module.layer1.1.bn1.bias', 'module.layer1.1.bn1.running_mean', 'module.layer1.1.bn1.running_var', 'module.layer1.1.bn1.$
+um_batches_tracked', 'module.layer1.1.conv2.weight', 'module.layer1.1.bn2.weight', 'module.layer1.1.bn2.bias', 'module.layer1.1.bn2.running_mean', 'module.layer1.1.bn2.running_var', 'modul$
+.layer1.1.bn2.num_batches_tracked', 'module.layer2.0.conv1.weight', 'module.layer2.0.bn1.weight', 'module.layer2.0.bn1.bias', 'module.layer2.0.bn1.running_mean', 'module.layer2.0.bn1.runni$
+g_var', 'module.layer2.0.bn1.num_batches_tracked', 'module.layer2.0.conv2.weight', 'module.layer2.0.bn2.weight', 'module.layer2.0.bn2.bias', 'module.layer2.0.bn2.running_mean', 'module.lay$
+r2.0.bn2.running_var', 'module.layer2.0.bn2.num_batches_tracked', 'module.layer2.0.downsample.0.weight', 'module.layer2.0.downsample.1.weight', 'module.layer2.0.downsample.1.bias', 'module$
+layer2.0.downsample.1.running_mean', 'module.layer2.0.downsample.1.running_var', 'module.layer2.0.downsample.1.num_batches_tracked', 'module.layer2.1.conv1.weight', 'module.layer2.1.bn1.we$
+ght', 'module.layer2.1.bn1.bias', 'module.layer2.1.bn1.running_mean', 'module.layer2.1.bn1.running_var', 'module.layer2.1.bn1.num_batches_tracked', 'module.layer2.1.conv2.weight', 'module.$
+ayer2.1.bn2.weight', 'module.layer2.1.bn2.bias', 'module.layer2.1.bn2.running_mean', 'module.layer2.1.bn2.running_var', 'module.layer2.1.bn2.num_batches_tracked', 'module.layer3.0.conv1.we$
+ght', 'module.layer3.0.bn1.weight', 'module.layer3.0.bn1.bias', 'module.layer3.0.bn1.running_mean', 'module.layer3.0.bn1.running_var', 'module.layer3.0.bn1.num_batches_tracked', 'module.la$
+er3.0.conv2.weight', 'module.layer3.0.bn2.weight', 'module.layer3.0.bn2.bias', 'module.layer3.0.bn2.running_mean', 'module.layer3.0.bn2.running_var', 'module.layer3.0.bn2.num_batches_track$
+d', 'module.layer3.0.downsample.0.weight', 'module.layer3.0.downsample.1.weight', 'module.layer3.0.downsample.1.bias', 'module.layer3.0.downsample.1.running_mean', 'module.layer3.0.downsam$
+le.1.running_var', 'module.layer3.0.downsample.1.num_batches_tracked', 'module.layer3.1.conv1.weight', 'module.layer3.1.bn1.weight', 'module.layer3.1.bn1.bias', 'module.layer3.1.bn1.runnin$
+_mean', 'module.layer3.1.bn1.running_var', 'module.layer3.1.bn1.num_batches_tracked', 'module.layer3.1.conv2.weight', 'module.layer3.1.bn2.weight', 'module.layer3.1.bn2.bias', 'module.laye$
+3.1.bn2.running_mean', 'module.layer3.1.bn2.running_var', 'module.layer3.1.bn2.num_batches_tracked', 'module.bn15.weight', 'module.bn15.bias', 'module.bn15.running_mean', 'module.bn15.runn$
+ng_var', 'module.bn15.num_batches_tracked', 'module.fc.weight', 'module.fc.bias'])
+
+
+原因，pytorch的模型在cpu和gpu的位置不同导致模型的名称不同
+需要先把model放到gpu上再处理。
+建议模型顺序 model init ， model.cuda() ,model.load(checkpoint)
