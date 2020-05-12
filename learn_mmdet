@@ -1,1 +1,18 @@
+maskcrnn
 
+code :
+
+
+config_file = './configs/mask_rcnn/mask_rcnn_r101_fpn_1x_coco.py'
+checkpoint_file = '/train/trainset/1/pretrained_model/pytorch/maskrcnn/mask_rcnn_r101_fpn_1x_coco_20200204-1efe0ed5.pth'
+model = init_detector(config_file, checkpoint_file, device='cuda:0')
+
+# test a single image and show the results
+img = '/train/trainset/1/3.jpg'  # or img = mmcv.imread(img), which will only load it once
+# img = '/train/trainset/1/t1.jpg'  # or img = mmcv.imread(img), which will only load it once
+bboxresult , segtresult = inference_detector(model, img)
+bboxes = np.vstack(bboxresult)
+
+geshi:
+bboxes 多组
+每一组格式：[x1,y1,x2,y2,conf]
