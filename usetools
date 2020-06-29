@@ -1,0 +1,12 @@
+1.ide
+
+
+2.show pic
+（1）http server
+for python3 , 
+python -m http.server [port]
+then , can view ip:port to see pic
+for python2
+use python -m SimpleHTTPServer [port] .
+(2)
+3.vim
